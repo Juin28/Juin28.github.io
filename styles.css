@@ -361,6 +361,12 @@ h3 {
     padding-right: 15px;
 }
 
+.dark-mode .experience-logo img {
+    background-color: #dddddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .experience-details {
     padding: 20px;
     flex-grow: 1;
