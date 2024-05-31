@@ -1,3 +1,21 @@
+/* General Styles */
+:root {
+    --h2-section-title-light:  #4568DC;
+    --h2-section-title-dark:  #a5baff;
+    --h3-section-subtitle-light:  #5f7fe5;
+    --h3-section-subtitle-dark:  #819cf3;
+
+    --component-background-light: #fff;
+    --component-background-dark: #2e2c2c;
+    --component-h3-light: #333;
+    --component-h3-dark: #F5F5F5;
+    --component-p-light: #4a4a4a;
+    --component-p-dark: #acacac;
+
+    --border-color-light: #333;
+    --border-color-dark: #c9c9c9;
+}
+
 /* Default styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -166,23 +184,23 @@ section {
 }
 
 h2 {
-    color: #4568DC;
+    color: var(--h2-section-title-light);
     margin-bottom: 30px;
     font-size: 36px;
 }
 
 .dark-mode h2 {
-    color: #a5baff;
+    color: var(--h2-section-title-dark);
 }
 
 h3 {
-    color: #5f7fe5;
+    color: var(--h3-section-subtitle-light);
     margin-bottom: 30px;
     font-size: 22px;
 }
 
 .dark-mode h3 {
-    color: #819cf3;
+    color: var(--h3-section-subtitle-dark)
 }
 
 /* 
@@ -195,6 +213,13 @@ h3 {
 }
 */
 
+#about-section p, #contact-section p {
+    font-family: "IBM Plex Mono", monospace; 
+    font-size: large;
+}
+
+/* Education Section */
+
 #education-section {
     padding: 40px 0;
 }
@@ -205,13 +230,8 @@ h3 {
     margin-bottom: 20px;
 }
 
-#about-section p, #contact-section p {
-    font-family: "IBM Plex Mono", monospace; 
-    font-size: large;
-}
-
 .education {
-    background-color: #fff;
+    background-color: var(--component-background-light);
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -222,7 +242,7 @@ h3 {
 }
 
 .dark-mode .education {
-    background-color: #2e2c2c;
+    background-color: var(--component-background-dark);
     box-shadow: 0 4px 12px 10px rgba(255, 255, 255, 0.1);
 }
 
@@ -245,7 +265,6 @@ h3 {
 .education-logo img {
     width: 120px;
     height: auto;
-    /* background-color: #dddddd; */
     padding: 20px;
     border-radius: 10px;
 }
@@ -263,24 +282,25 @@ h3 {
 }
 
 .education-info h3 {
-    color: #333;
+    color: var(--component-h3-light);
     font-size: 25px;
     margin-bottom: 20px;
 }
 
 .dark-mode .education-info h3 {
-    color: #F5F5F5;
+    color: var(--component-h3-dark);
 }
 
 .education-info p {
     font-size: 17px;
-    color: #4a4a4a;
+    color: var(--component-p-light);
 }
 
 .dark-mode .education-info p {
-    color: #acacac;
+    color: var(--component-p-dark);
 }
 
+/* Coursework Section */
 
 #coursework-section ul li {
     font-family: "Source Code Pro", monospace;
@@ -300,17 +320,95 @@ h3 {
     /* box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3); */
 }
 
-.project {
-    background-color: #fff;
+/* Experience Section */
+
+#experience-section {
+    padding: 40px 0;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience-card {
+    display: flex;
+    align-items: center; 
+    background-color: var(--component-background-light);
     padding: 40px;
     margin-bottom: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 12px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.dark-mode .experience-card {
+    background-color: var(--component-background-dark);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.experience-logo {
+    padding: 20px;
+}
+
+.experience-logo img {
+    /* max-width: 120px; */
+    width: 120px;
+    height: auto;
+    padding-right: 15px;
+}
+
+.experience-details {
+    padding: 20px;
+    flex-grow: 1;
+    border-left: 1px solid var(--border-color-light);
+}
+
+.dark-mode .experience-details {
+    border-color: var(--border-color-dark);
+}
+
+.experience-details h3 {
+    margin-top: 0;
+    color: var(--component-h3-light);
+}
+
+.dark-mode .experience-details h3 {
+    color: var(--component-h3-dark);
+}
+
+.experience-duration {
+    font-style: italic;
+    /* color: #888; */
+    color: var(--component-p-light);
+}
+
+.dark-mode .experience-duration {
+    color: var(--component-p-dark);
+}
+
+.experience-description {
+    margin-top: 10px;
+}
+
+/* Project Section */
+
+.project {
+    background-color: var(--component-background-light);
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
 }
 
 .dark-mode .project {
-    background-color: #2e2c2c;
+    background-color: var(--component-background-dark);
     box-shadow: 0 4px 12px 10px rgba(255, 255, 255, 0.1);
 }
 
@@ -331,6 +429,8 @@ h3 {
 .dark-mode .project h3 {
     color: #F5F5F5;
 }
+
+/* Skills Section */
 
 .skills {
     display: grid;
