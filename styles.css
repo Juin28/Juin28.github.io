@@ -14,6 +14,8 @@
 
     --border-color-light: #333;
     --border-color-dark: #c9c9c9;
+
+    --logo-background: #efefef;
 }
 
 /* Default styles */
@@ -270,7 +272,7 @@ h3 {
 }
 
 .dark-mode .education-logo img {
-    background-color: #dddddd;
+    background-color: var(--logo-background);
 }
 
 .education-info {
@@ -362,7 +364,7 @@ h3 {
 }
 
 .dark-mode .experience-logo img {
-    background-color: #dddddd;
+    background-color: var(--logo-background);
     padding: 20px;
     border-radius: 10px;
 }
