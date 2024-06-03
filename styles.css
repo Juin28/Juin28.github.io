@@ -64,7 +64,7 @@ header {
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 2px solid rgba(255, 255, 255, 0.18);
-    /* width: 80%; */
+    max-width: 70vw;
 }
 
 .dark-mode #header_word {
@@ -99,6 +99,8 @@ nav {
     /* background-color: rgba(245, 245, 245, 0.8); */
     padding: 10px 0;
     /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+    width: 100vw;
+    overflow-x: auto;
 }
 
 nav button {
@@ -108,7 +110,7 @@ nav button {
     border: none;
     padding: 10px 20px;
     margin: 0 10px;
-    font-size: 16px;
+    font-size: auto;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -117,6 +119,7 @@ nav button {
     transition: all 0.3s ease;
     position: sticky;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    max-width: min-content;
 }
 
 nav button:hover {
@@ -134,6 +137,7 @@ nav button:hover {
     nav {
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
 
     nav button {
