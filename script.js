@@ -14,7 +14,7 @@ function scrollToSection(section) {
       top: window.pageYOffset + targetY,
       behavior: 'smooth',
     });
-  }
+}
 
 const aboutBtn = document.getElementById('about-btn');
 const educationBtn = document.getElementById('education-btn');
@@ -74,4 +74,32 @@ contactBtn.addEventListener('click', () => {
     scrollToSection(contactSection);
 });
 
+// Get the header element
+const header = document.querySelector('header');
+
+// Get the body element to check the theme
+const body = document.body;
+
+function updateHeaderGradient(x, y) {
+    if (body.classList.contains('dark-mode')) {
+        header.style.background = `linear-gradient(to right, rgb(${50 + 1.8 * x}, ${20 + 0.8 * y}, ${200}), rgb(${150 - 1.8 * x}, ${20 - 0.8 * y}, ${50}))`;
+    } else {
+        header.style.background = `linear-gradient(to right, rgb(${100 + 1.8 * x}, ${60 + 0.8 * y}, ${250}), rgb(${200 - 1.8 * x}, ${60 - 0.8 * y}, ${100}))`;
+    }
+}
+
+// Add event listener for mouse movement
+document.addEventListener('mousemove', (event) => {
+    const x = event.clientX / window.innerWidth * 100;
+    const y = event.clientY / window.innerHeight * 100;
+    updateHeaderGradient(x, y);
+});
+
+// Add event listener for theme change
+body.addEventListener('themeChange', () => {
+    updateHeaderGradient(
+        event.clientX / window.innerWidth * 100,
+        event.clientY / window.innerHeight * 100
+    );
+});
 
