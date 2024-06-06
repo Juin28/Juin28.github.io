@@ -9,6 +9,8 @@
     --component-background-dark: #2e2c2c;
     --component-h3-light: #333;
     --component-h3-dark: #F5F5F5;
+    --component-h4-light: #959595;
+    --component-h4-dark: #292929;
     --component-p-light: #4a4a4a;
     --component-p-dark: #acacac;
 
@@ -16,6 +18,8 @@
     --border-color-dark: #c9c9c9;
 
     --logo-background: #efefef;
+
+    
 }
 
 /* Default styles */
@@ -436,13 +440,22 @@ h3 {
 }
 
 .project h3 {
-    color: #333;
+    color: var(--component-h3-light);
     font-size: 24px;
     margin-bottom: 20px;
 }
 
 .dark-mode .project h3 {
-    color: #F5F5F5;
+    color: var(--component-h3-light);
+}
+
+.project h4 {
+    color: var(--component-h4-light);
+    font-size: 12px;
+}
+
+.dark-mode .project h4 {
+    color: var(--component-h4-dark);
 }
 
 /* Skills Section */
