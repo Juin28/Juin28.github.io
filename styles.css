@@ -57,11 +57,13 @@ header {
 
 .dark-mode header {
     background-image: linear-gradient(to right, #2256ff, #f712ff);
-    color: #252525;
+    /* color: #252525; */
+    color: rgb(14, 14, 14);
 }
 
 #header_word {
     padding: 2rem;
+    padding-top: 0;
     background-color: rgba(255, 255, 255, 0.3); 
     border-radius: 1rem;
     text-align: center;
