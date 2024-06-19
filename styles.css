@@ -446,7 +446,7 @@ h3 {
 }
 
 .dark-mode .project h3 {
-    color: var(--component-h3-light);
+    color: var(--component-h3-dark);
 }
 
 .project h4 {
