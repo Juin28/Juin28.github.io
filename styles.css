@@ -415,10 +415,16 @@ h3 {
 
 /* Project Section */
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
 .project {
     background-color: var(--component-background-light);
-    padding: 40px;
-    margin-bottom: 40px;
+    padding: 15px 20px;
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 12px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
@@ -439,23 +445,84 @@ h3 {
     box-shadow: 0 8px 20px 20px rgba(255, 255, 255, 0.1);
 }
 
-.project h3 {
+.project > h3 {
     color: var(--component-h3-light);
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 900;
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
 }
 
-.dark-mode .project h3 {
+.dark-mode .project > h3 {
     color: var(--component-h3-dark);
 }
 
-.project h4 {
-    color: var(--component-h4-light);
-    font-size: 12px;
+.project > h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2b2b2b; /* Adjust the color as needed */
+    border-radius: 2px;
 }
 
-.dark-mode .project h4 {
-    color: var(--component-h4-dark);
+
+.project p {
+    color: var(--component-p-light);
+    font-size: 14px;
+    font-weight: 520;
+    align-items: center;
+}
+
+.dark-mode .project p {
+    color: var(--component-p-dark);
+}
+
+.project a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .project a {
+    filter: invert(0.825);
+}
+
+.github {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111432.png");
+    cursor: pointer;
+}
+
+.github:hover, .website:hover {
+    background-color: #e2e2e2;
+}
+
+.github:active, .website:active {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .github:hover, .dark-mode .website:hover {
+    background-color: #d7d7d7;
+}
+
+.dark-mode .github:active, .dark-mode .website:active {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.website {
+    background-image: url("https://cdn-icons-png.flaticon.com/128/1/1198.png");
+    cursor: pointer;
 }
 
 /* Skills Section */
@@ -530,7 +597,8 @@ h3 {
 }
 
 .footer {
-    background-color: #333;
+    /* background-color: #333; */
+    background: linear-gradient(to bottom right, #1d1d1d, #333, #757575);
     color: #fff;
     padding: 30px;
     text-align: center;
@@ -538,7 +606,8 @@ h3 {
 }
 
 .dark-mode .footer {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background: linear-gradient(to bottom right, #fdfdfd, #9c9c9c, #3f3f3f);
     color: #333;
 }
 
@@ -566,7 +635,7 @@ h3 {
 }
 
 .dark-mode .social-buttons a {
-    filter: invert(1);
+    filter: invert(0.825);
 }
 
 .social-buttons a.email {
