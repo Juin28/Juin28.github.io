@@ -36,4 +36,34 @@ async function addContactInfo(name, email, message) {
 }
 
 // Export the addContactInfo function for use in other modules
-export { addContactInfo };
+// export { addContactInfo };
+
+// import { addContactInfo } from "./firebase-contact.js";
+const form = document.getElementById("contact-form");
+const nameInput = document.getElementById("name-input");
+const emailInput = document.getElementById("email-input");
+const messageInput = document.getElementById("message-input");
+
+let timeoutId;
+
+function handleInputChange() {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const message = messageInput.value.trim();
+
+        // Validate the inputs
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill in all the required fields.");
+            return;
+        }
+
+        addContactInfo(name, email, message);
+  }, 500);
+}
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    handleInputChange();
+});

@@ -539,6 +539,12 @@ h3 {
     grid-gap: 20px;
 }
 
+.technical-skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
 .skill {
     background-color: #efeded;
     padding: 20px;
