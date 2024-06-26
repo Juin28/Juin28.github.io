@@ -1,11 +1,7 @@
-// import { initializeApp } from "firebase/app";
-// import { getFirestore, collection, addDoc } from "firebase/firestore";
-// import { getAnalytics } from "firebase/analytics";
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
 
-// Your web app's Firebase configuration
+// Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   authDomain: "personal-portfolio-a562d.firebaseapp.com",
@@ -16,11 +12,9 @@ const firebaseConfig = {
   measurementId: "G-QJLFK4EPF6"
 };
 
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-// const analytics = getAnalytics(app);
 
 // Get the "contact" collection reference
 const contactCollection = collection(db, "contact");
