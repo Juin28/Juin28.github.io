@@ -18,11 +18,17 @@
     --border-color-dark: #c9c9c9;
 
     --logo-background: #efefef;
+
+    --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-dark: rgba(43, 43, 43, 0.1);
+    --glass-border-light: rgba(255, 255, 255, 0.18);
+    --glass-border-dark: rgba(43, 43, 43, 0.18);
 }
 
 /* Default styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: "Karla", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
@@ -596,23 +602,127 @@ h3 {
     /* box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3); */
 }
 
-.footer {
-    /* background-color: #333; */
-    background: linear-gradient(to bottom right, #1d1d1d, #333, #757575);
-    color: #fff;
-    padding: 30px;
+/* Let's Connect Section */
+.contact-section {
+    /* padding: 80px 0; */
+    padding: 0;
+    background: linear-gradient(to right, #2b2b2b, #737373);
+    color: var(--component-h3-dark);
+    border-radius: 35px;
+}
+
+.dark-mode .contact-section {
+    color: var(--component-h3-light);
+    background: linear-gradient(to right, #d9d9d9, #a0a0a0);
+}
+
+.contact-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section .content {
+    background: var(--glass-bg-light);
+    border: 1px solid var(--glass-border-light);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 35px;
     text-align: center;
+    width: 100%;
+}
+
+.dark-mode .contact-section .content {
+    background: var(--glass-bg-dark);
+    border: 1px solid var(--glass-border-dark);
+}
+
+.contact-section h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--component-h3-dark);
+}
+
+.dark-mode .contact-section h2 {
+    color: var(--component-h3-light);
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 70%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: 1px solid var(--glass-border-light);
+    border-radius: 5px;
+    background-color: var(--glass-bg-light);
+    color: var(--component-h3-dark);
     font-size: 16px;
 }
 
-.dark-mode .footer {
-    /* background-color: #fff; */
-    background: linear-gradient(to bottom right, #fdfdfd, #9c9c9c, #3f3f3f);
-    color: #333;
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #c2c2c2;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
 }
 
-.footer p {
-    padding: 10px;
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+    border: 1px solid var(--glass-border-dark);
+    background-color: var(--glass-bg-dark);
+    color: var(--component-h3-light);
+}
+
+.dark-mode .contact-form input::placeholder,
+.dark-mode .contact-form textarea::placeholder {
+    color: #767676;
+    text-align: center;
+}
+
+.contact-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: var(--component-background-dark);
+    color: var(--component-background-light);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .contact-form button {
+    background-color: var(--component-background-light);
+    color: var(--component-background-dark);
+}
+
+.contact-form button:hover {
+    background-color: #aeaeae;
+}
+
+.dark-mode .contact-form button:hover {
+    background-color: #757474;
+}
+
+.contact-form button:active {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .social-buttons {
@@ -632,6 +742,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     transition: background-color 0.3s ease;
+    filter: invert(0.1);
 }
 
 .dark-mode .social-buttons a {
@@ -656,5 +767,32 @@ h3 {
 }
 
 .social-buttons a:hover {
-    background-color: #ccc;
+    background-color: #aeaeae;
 }
+
+.social-buttons a:active {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+
+.footer {
+    /* background-color: #333; */
+    background: linear-gradient(to bottom right, #1d1d1d, #333, #757575);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.dark-mode .footer {
+    /* background-color: #fff; */
+    background: linear-gradient(to bottom right, #fdfdfd, #9c9c9c, #3f3f3f);
+    color: #333;
+}
+
+.footer p {
+    padding: 10px;
+}
+
+

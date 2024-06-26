@@ -35,42 +35,34 @@ const awardSection = document.getElementById('award-section');
 const contactSection = document.getElementById('contact-section');
 
 aboutBtn.addEventListener('click', () => {
-    // aboutSection.scrollIntoView({ behavior: 'smooth' });
     scrollToSection(aboutSection);
 });
 
 educationBtn.addEventListener('click', () => {
-    // educationSection.scrollIntoView({ behavior: 'smooth' });
     scrollToSection(educationSection);
 });
 
 courseworkBtn.addEventListener('click', () => {
-    // courseworkSection.scrollIntoView({ behavior: 'smooth' });
     scrollToSection(courseworkSection);
 });
 
 experienceBtn.addEventListener('click', () => {
-    // experienceSection.scrollIntoView({ behavior: 'smooth' });
     scrollToSection(experienceSection);
 });
 
 projectsBtn.addEventListener('click', () => {
-    // projectsSection.scrollIntoView({ behavior: 'smooth' });
     scrollToSection(projectsSection);
 });
 
 skillsBtn.addEventListener('click', () => {
-    // skillsSection.scrollIntoView({ behavior: 'smooth' });
     scrollToSection(skillsSection);
 });
 
 awardBtn.addEventListener('click', () => {
-    // awardSection.scrollIntoView({ behavior: 'smooth' });
     scrollToSection(awardSection);
 });
 
 contactBtn.addEventListener('click', () => {
-    // contactSection.scrollIntoView({ behavior: 'smooth' });
     scrollToSection(contactSection);
 });
 
@@ -101,5 +93,41 @@ body.addEventListener('themeChange', () => {
         event.clientX / window.innerWidth * 100,
         event.clientY / window.innerHeight * 100
     );
+});
+
+// Add firebase function here
+import { addContactInfo } from "./firebase-contact.js";
+
+const form = document.getElementById("contact-form");
+const nameInput = document.getElementById("name-input");
+const emailInput = document.getElementById("email-input");
+const messageInput = document.getElementById("message-input");
+
+let timeoutId;
+
+function handleInputChange() {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const message = messageInput.value.trim();
+
+        // Validate the inputs
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill in all the required fields.");
+            return;
+        }
+
+        addContactInfo(name, email, message);
+  }, 500);
+}
+
+// nameInput.addEventListener("input", handleInputChange);
+// emailInput.addEventListener("input", handleInputChange);
+// messageInput.addEventListener("input", handleInputChange);
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    handleInputChange();
 });
 

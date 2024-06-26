@@ -10,6 +10,8 @@
 
     gtag('config', 'G-G5V9Q7XKC5');
     </script>
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juin Tan | Personal Website</title>
@@ -19,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/942/942748.png" />
 </head>
 <body>
@@ -378,7 +381,7 @@
             <section id = "award-in-awards">
                 <h3>Awards</h3>
                 <ul>
-                    <li>👨‍💻 Ranked 4th out of 150 students in the Bachelor of Engineering in Computer Science 2022-23 cohort of HKUST (as of Spring 2024)</li>
+                    <li>👨‍💻 Ranked 4th out of 150 students in the Bachelor of Engineering in Computer Science 2022-23 cohort of HKUST</li>
                     <li>⭐ Dean’s List for the School of Engineering of The Hong Kong University of Science and Technology (Fall 2023)</li>
                     <li>⭐ Dean’s List for the School of Engineering of The Hong Kong University of Science and Technology (Spring 2023)</li>
                     <li>⭐ Dean’s List for the School of Engineering of The Hong Kong University of Science and Technology (Fall 2022)</li>
@@ -418,22 +421,39 @@
                 </ul>
             </section>
         </section>
-        <section id = "contact-section">
+
+        <!-- <section id = "contact-section">
             <h2>Contact</h2>
             <p>Feel free to reach out to me at <a href="mailto:jtanat@connect.ust.hk">jtanat@connect.ust.hk</a> or connect with me on <a href="www.linkedin.com/in/juin-tan-jt1028">LinkedIn</a>. Alternatively, feel free to connect with me using the social media buttons in the footer.</p>
+        </section> -->
+        <script type="module" src="script.js"></script>
+        <section class="contact-section" id = "contact-section">
+            <div class="container">
+              <div class="content">
+                <h2>Let's Connect !</h2>
+                <!-- <p>Leave a Message and See How We Might Collaborate !</p> -->
+                <p>LEAVE A MESSAFE AND SEE HOW WE MIGHT COLLABORATE!</p>
+                <div class="social-buttons">
+                    <a href="mailto:jtanat@connect.ust.hk" class="email"></a>
+                    <a href="https://github.com/Juin28" class="github"></a>
+                    <a href="https://www.linkedin.com/in/juin-tan-jt1028/" class="linkedin"></a>
+                </div>
+                <form class="contact-form" id="contact-form">
+                  <input type="text" placeholder="Name" id="name-input" />
+                  <input type="email" placeholder="Email" id="email-input" />
+                  <textarea placeholder="Message" id="message-input"></textarea>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
         <p>&copy; 2024 Juin Tan. All rights reserved.</p>
-        <div class="social-buttons">
-            <a href="mailto:jtanat@connect.ust.hk" class="email"></a>
-            <a href="https://github.com/Juin28" class="github"></a>
-            <a href="https://www.linkedin.com/in/juin-tan-jt1028/" class="linkedin"></a>
-            <!-- <a href="https://www.instagram.com/juin.__.02" class="instagram"></a> -->
-        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+
 </body>
 </html>
