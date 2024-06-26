@@ -122,10 +122,6 @@ function handleInputChange() {
   }, 500);
 }
 
-// nameInput.addEventListener("input", handleInputChange);
-// emailInput.addEventListener("input", handleInputChange);
-// messageInput.addEventListener("input", handleInputChange);
-
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     handleInputChange();
