@@ -557,6 +557,10 @@ h3 {
     margin-top: 10px;
 }
 
+.experience-description-point {
+    padding-bottom: 6px;
+}
+
 @media (max-width: 768px) {
     #experience-section {
         padding: 20px 0;
