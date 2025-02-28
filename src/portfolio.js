@@ -104,7 +104,7 @@ const projects = [
   {
     name: "Automated Brain Tumor Detection",
     description:
-      "This project is an automated system for the detection and segmentation of brain tumors in MRI scans",
+      "This project is an automated system designed for detection and segmentation of brain tumors in MRI scans, and a report will be generated to help users understand the diagnostic process",
     stack: ["TensorFlow", "OpenCV", "Seaborn"],
     category: "Machine Learning",
     sourceCode: "https://github.com/Juin28/Brain_Tumor_Detection_Model",
@@ -144,7 +144,7 @@ const projects = [
   {
     name: "CNN Sketched Character Detection Model",
     description:
-      "This project develops a deep learning-based model for detecting sketched characters in images, utilizing the ResNet50 architecture and the Generalized Intersection over Union (GIoU) loss function.",
+      "This project develops a deep learning-based model for detecting sketched characters in images, utilizing the ResNet50 architecture and the Generalized Intersection over Union (GIoU) loss function",
     stack: ["Tensorflow", "Keras", "Scikit-learn"],
     category: "Machine Learning",
     sourceCode: "https://github.com/Juin28/CNN-Sketched-Character-Detection-Model",
