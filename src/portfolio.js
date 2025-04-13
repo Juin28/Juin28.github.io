@@ -110,12 +110,13 @@ const projects = [
     sourceCode: "https://github.com/Juin28/Brain_Tumor_Detection_Model",
   },
   {
-    name: "Twitter DApp",
+    name: "Income vs. Expense Atlas",
     description:
-      "The Twitter Decentralized Applications (DApp) is a decentralized social media platform built on Ethereum, providing users control over data and interactions",
-    stack: ["Solidity", "React.js", "Web3.js"],
+      "The Income vs. Expense Atlas is a global tool for comparing income, expenses, and savings, helping users analyze budgets and purchasing power through interactive, customizable visuals",
+    stack: ["React.js", "D3.js", "JavaScript"],
     category: "Web Development",
-    sourceCode: "https://github.com/Juin28/Twitter_DApp",
+    sourceCode: "https://github.com/Juin28/Income_Expense_Atlas",
+    livePreview: "https://juin.is-a.dev/Income_Expense_Atlas",
   },
   {
     name: "FoodLink",
