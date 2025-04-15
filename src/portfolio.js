@@ -305,7 +305,9 @@ const skills = {
   technicalSkills: [
     "Front End Development",
     "Back End Development",
+    "Mobile App Development",
     "Machine Learning",
+    "Data Visualization",
     "Computer Vision",
     "Data Processing",
     "Blockchain Development",
