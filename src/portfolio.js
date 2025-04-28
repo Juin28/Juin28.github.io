@@ -206,6 +206,10 @@ const awards = [
     organization: "Cambridge Assessment International Education",
   },
   {
+    title: "Gold Medalist of British Biology Olympiad",
+    organization: "United Kingdom Biology Competitions",
+  },
+  {
     title: "Champion of Taekwondo Open Championship 2015 and 2017",
     organization: "Malaysian Taekwondo Association (CHITF)",
   }
