@@ -182,7 +182,7 @@ const awards = [
     organization: "The Institution of Engineering and Technology",
   },
   {
-    title: "Ranked 4th in the 2022-23 cohort of Bachelor of Engineering in Computer Science at HKUST",
+    title: "Ranked 4th in the 2022-23 cohort of Bachelor of Engineering in Computer Science at HKUST in Spring 2024",
     organization: "Department of Computer Science and Engineering, HKUST",
   },
   {
@@ -283,8 +283,9 @@ const skills = {
   ],
   developerTools: [
     "Spring Boot",
-    "React.js",
+    "ASP.NET",
     "React Native",
+    "React.js",
     "Node.js",
     "Express.js",
     "Ethers.js",
