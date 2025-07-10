@@ -288,8 +288,11 @@ const skills = {
   developerTools: [
     "Spring Boot",
     "ASP.NET",
+    "Blazor",
     "React Native",
     "React.js",
+    "Next.js",
+    "D3.js",
     "Node.js",
     "Express.js",
     "Ethers.js",
