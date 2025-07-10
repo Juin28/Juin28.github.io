@@ -237,6 +237,10 @@ const certificates = [
     organization: "Meta",
   },
   {
+    title: "Frontend Developer (React)",
+    organization: "HackerRank",
+  },
+  {
     title: "Problem Solving (Basic)",
     organization: "HackerRank",
   },
