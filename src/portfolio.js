@@ -23,7 +23,7 @@ const educations = [
     title: "Bachelor of Engineering in Computer Science with an Extended Major in Artificial Intelligence",
     school: "The Hong Kong University of Science and Technology",
     result: "CGPA: 4.027/4.300",
-    date: "Sep 2022 - Jun 2026",
+    // date: "Sep 2022 - Jun 2026",
     school_logo: "https://logo.ust.hk/img/downloads/ust_c4.svg",
   }, 
   {
@@ -45,40 +45,48 @@ const educations = [
 const experiences = [
   {
     id: 1,
+    company: "Y-Intercept Limited",
+    role: "Quantitative Developer Intern",
+    date: "June 2025 - December 2025",
+    details: [
+    ]
+  },
+  {
+    id: 2,
     company: "Rabbit Credit Limited",
     role: "Application Developer Intern",
     date: "October 2024 - December 2024",
     details: [
         "Designed and implemented the frontend of the Connect Portal, enabling the operations team to interact with the Credit Reference Platform (CRP) for batch data submissions and inquiries using React.js and Tailwind CSS",
         "Engineered backend services for the Rabbit Loan Management System with Spring Boot, including API endpoints for data submission and inquiry flows, along with comprehensive documentation",
-        "Develope an automated test suite using JUnit, enhancing backend code coverage from 46% to 63%"
+        "Boosted backend test coverage from 46% to 63% by building a comprehensive automated test suite with JUnit"
     ]
   },
   {
-    id: 2,
+    id: 3,
     company: "DualMint",
     role: "Full Stack Engineering Intern",
     date: "June 2024 - August 2024",
     details: [
         "Developed a personalized Soulbound NFT platform for a French art gallery using Solidity smart contracts, providing secure and tamper-proof digital ownership for the gallery’s artwork",
-        "Implemented a TypeScript backend solution for NFT minting and deployment processes using Node.js, Express.js, and Ethers.js, enabling the seamless batch minting of 200 art pieces every month and a more streamlined art distribution process",
-        "Implemented an automated comprehensive test suite that achieved a 96% code coverage, using Hardhat, Ethers.js, Chai and Mocha, covering critical functionalities such as batch minting, token URI management, burning, and contract upgradability"
-    ]
-  },
-  {
-    id: 3,
-    company: "HKUST SMART Lab",
-    role: "Undergraduate Machine Learning Researcher",
-    date: "June 2023 - August 2024",
-    details: [
-        "Developed an advanced object detection and instance segmentation model with enhanced accuracy and efficiency, aimed to aid in early breast and prostate cancer diagnosis",
-        "Focused on detecting the human epidermal growth factor receptor 2 (HER2) gene and centromere of chromosome 17 (CEN17) from Fluorescence in situ hybridization (FISH) images and calculating the HER2/CEN-17 ratio for breast cancer diagnosis",
-        "Built a two-step pipeline consisting cell detector and nucleus detector on ISBI dataset and FISH dataset which achieved an accuracy of 90% by utilizing the Detectron2 framework to deploy Faster R-CNN, Fast R-CNN and MASK-RCNN models",
-        "Processed the Fluorescence in situ hybridization (FISH) datasets of 169 patients (300GB) using Otsu’s Thresholding with OpenCV and NumPy"
+        "Built a TypeScript backend using Node.js, Express.js, and Ethers.js to streamline NFT minting and deployment, supporting seamless monthly batch processing of 200 art pieces for gallery distribution",
+        "Architected a high-coverage test suite with Hardhat, Ethers.js, Chai, and Mocha, achieving 96% code coverage across key NFT functionalities including batch minting, token URI management, burning, and contract upgradability"
     ]
   },
   {
     id: 4,
+    company: "HKUST SMART Lab",
+    role: "Undergraduate Machine Learning Researcher",
+    date: "June 2023 - August 2024",
+    details: [
+        "Engineered advanced object detection and instance segmentation models with enhanced accuracy and efficiency that aimed to accelerate breast cancer and prostate cancer diagnosis process from 5 days to 2 hours, enhancing patient outcomes and treatment planning",
+        "Focused on detecting the human epidermal growth factor receptor 2 (HER2) gene and centromere of chromosome 17 (CEN17) from Fluorescence in situ hybridization (FISH) images and calculating the HER2/CEN-17 ratio for breast cancer diagnosis",
+        "Designed a two-stage detection pipeline for cell and nucleus identification on the ISBI dataset using Detectron2, deploying Faster R-CNN and Fast R-CNN models to achieve 90% accuracy",
+        "Processed the Fluorescence in situ hybridization (FISH) datasets of 169 patients (300GB) using Otsu’s Thresholding with OpenCV and NumPy"
+    ]
+  },
+  {
+    id: 5,
     company: "The Hong Kong Malaysian Student Association (HKMSA)",
     role: "Lead Webmaster",
     date: "December 2023 - December 2024",
@@ -88,12 +96,13 @@ const experiences = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     company: "HKUST Department of Computer Science and Engineering",
     role: "Undergraduate Teaching Assistant",
     date: "January 2024 - December 2024",
     details: [
-        "Teaching Assistant for COMP2011 - Programming with C++ and COMP2211 - Exploring Artificial Intelligence",
+        "Teaching Assistant for COMP2011 - Programming with C++", 
+        "Teaching Assistant for COMP2211 - Exploring Artificial Intelligence",
         "Collaborated with course instructors to develop engaging lab assignments that reinforced core computer science concepts",
         "Guided students through their labs and programming assignments in C++ and Python by identifying logic gaps and bugs"
     ]
@@ -112,7 +121,7 @@ const projects = [
   {
     name: "Income vs. Expense Atlas",
     description:
-      "The Income vs. Expense Atlas is a global tool for comparing income, expenses, and savings, helping users analyze budgets and purchasing power through interactive, customizable visuals",
+      "The Income vs. Expense Atlas is a global tool for comparing income, expenses, and savings across 680+ cities, helping users analyze budgets and purchasing power through interactive, customizable visuals",
     stack: ["React.js", "D3.js", "JavaScript"],
     category: "Web Development",
     sourceCode: "https://github.com/Juin28/Income_Expense_Atlas",
