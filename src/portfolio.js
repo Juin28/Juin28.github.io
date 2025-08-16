@@ -6,9 +6,9 @@ const header = {
 const about = {
   name: "Juin Tan",
   description:
-    "I am an ambitious and versatile software engineer, currently a penultimate computer science student. " + 
-    "My expertise includes artificial intelligence and web development, demonstrated through various projects, " + 
-    "from AI-driven systems to engaging personal websites and applications. " + 
+    "Hi, I'am Juin Tan, an ambitious and versatile software engineer, currently a penultimate computer science student. " + 
+    "My expertise includes artificial intelligence and web development, demonstrated through various projects." + 
+    "I've worked on diverse projects like low-latency trading platforms, ML models to speed up cancer diagnosis, and even soulbound NFTs for a French art gallery." +  
     "Driven by a thirst for knowledge, I stay updated on cutting-edge technologies to deliver innovative solutions. " + 
     "With a commitment to excellence and a tenacious attitude, I am ready to tackle new challenges and make a lasting impact in the industry!",
   // resume: "https://example.com",
@@ -278,61 +278,66 @@ const certificates = [
 
 const skills = {
   programmingLanguages: [
-    "JavaScript",
-    "TypeScript",
-    "Python",
     "Java",
+    "C#",
     "C++",
     "C",
-    "C#",
-    "SQL",
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "PL/SQL",
+    "R",
     "Solidity",
     "MIPS Assembly",
-    "Arduino",
-    "R",
-    "SQL",
     "HTML5",
     "CSS3/Tailwind CSS",
+    "Arduino",
   ],
   developerTools: [
     "Spring Boot",
     "ASP.NET",
     "Blazor",
-    "React Native",
     "React.js",
+    "React Native",
     "Next.js",
     "D3.js",
     "Node.js",
     "Express.js",
     "Ethers.js",
-    "Hardhat",
-    "Detectron2",
     "TensorFlow",
     "Keras",
     "Scikit-learn",
+    "Detectron2",
     "NumPy",
     "Pandas",
     "Matplotlib",
     "Seaborn",
     "OpenCV",
+    "AWS",
+    "Firebase",
+    "Redis",
+    "RocksDB",
     "MongoDB",
     "MySQL",
-    "Firebase",
+    "Hardhat",
+    "xUnit.net",
+    "JUnit",
     "Mocha",
     "Chai",
     "Figma",
     "Git",
   ],
   technicalSkills: [
-    "Front End Development",
-    "Back End Development",
+    "Low Latency System",
+    "Full Stack Development",
     "Mobile App Development",
     "Machine Learning",
     "Data Visualization",
     "Computer Vision",
     "Data Processing",
     "Blockchain Development",
-    "Smart Contract Development"
+    "Smart Contract Development",
+    "Algorithms and Data Structures"
   ]
 }
 
