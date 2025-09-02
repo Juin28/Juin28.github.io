@@ -6,9 +6,9 @@ const header = {
 const about = {
   name: "Juin Tan",
   description:
-    "Hi, I'am Juin Tan, an ambitious and versatile software engineer, currently a penultimate computer science student. " + 
-    "My expertise includes artificial intelligence and web development, demonstrated through various projects." + 
-    "I've worked on diverse projects like low-latency trading platforms, ML models to speed up cancer diagnosis, and even soulbound NFTs for a French art gallery." +  
+    "Hi, I'm Juin Tan, an ambitious and versatile software engineer, currently a penultimate computer science student. " + 
+    "My expertise includes artificial intelligence and web development, demonstrated through various projects. " + 
+    "I've worked on diverse projects like low-latency trading platforms, ML models to speed up cancer diagnosis, and even soulbound NFTs for a French art gallery. " +  
     "Driven by a thirst for knowledge, I stay updated on cutting-edge technologies to deliver innovative solutions. " + 
     "With a commitment to excellence and a tenacious attitude, I am ready to tackle new challenges and make a lasting impact in the industry!",
   // resume: "https://example.com",
@@ -22,8 +22,8 @@ const educations = [
   {
     title: "Bachelor of Engineering in Computer Science with an Extended Major in Artificial Intelligence",
     school: "The Hong Kong University of Science and Technology",
+    final_year_project: "Final Year Project: Automatic Emergent Stock Fundamental Analysis and Trading System",
     result: "CGPA: 4.027/4.300",
-    // date: "Sep 2022 - Jun 2026",
     school_logo: "https://logo.ust.hk/img/downloads/ust_c4.svg",
   }, 
   {
@@ -49,6 +49,8 @@ const experiences = [
     role: "Quantitative Developer Intern",
     date: "June 2025 - December 2025",
     details: [
+      "Architected and optimized low-latency automated electronic trading platform, improving execution throughput, system reliability, and cross-border scalability for multi-venue trading.",
+      "Integrated live market feeds and enriched order flow analytics in close collaboration with quant researchers and traders, enabling adaptive execution logic."
     ]
   },
   {
@@ -225,6 +227,10 @@ const awards = [
 ]
 
 const certificates = [
+  {
+    title: "AWS Certified AI Practitioner",
+    organization: "Amazon Web Services",
+  },
   {
     title: "Mensa Member",
     organization: "Mensa Society",
