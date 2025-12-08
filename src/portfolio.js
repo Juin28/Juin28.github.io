@@ -6,11 +6,10 @@ const header = {
 const about = {
   name: "Juin Tan",
   description:
-    "Hi, I'm Juin Tan, an ambitious and versatile software engineer, currently a penultimate computer science student. " + 
-    "My expertise includes artificial intelligence and web development, demonstrated through various projects. " + 
-    "I've worked on diverse projects like low-latency trading platforms, ML models to speed up cancer diagnosis, and even soulbound NFTs for a French art gallery. " +  
-    "Driven by a thirst for knowledge, I stay updated on cutting-edge technologies to deliver innovative solutions. " + 
-    "With a commitment to excellence and a tenacious attitude, I am ready to tackle new challenges and make a lasting impact in the industry!",
+    "Hi, I'm Juin Tan. I'm a penultimate-year computer science student who loves building things that make a difference. " + 
+    "My journey has taken me from developing low-latency trading platforms to creating machine learning tools for cancer diagnosis, and even working on digital art projects in France. " + 
+    "I enjoy solving real-world problems with code, whether it's through web development, AI, or something new. " + 
+    "Outside of tech, I'm always curious, always learning, and always up for a challenge, whether that's in the classroom, at a hackathon, or collaborating with others to bring ideas to life.",
   // resume: "https://example.com",
   social: {
     linkedin: "https://www.linkedin.com/in/juin-tan-jt1028/",
@@ -49,8 +48,6 @@ const experiences = [
     role: "Quantitative Developer Intern",
     date: "June 2025 - December 2025",
     details: [
-      "Architected and optimized low-latency automated electronic trading platform, improving execution throughput, system reliability, and cross-border scalability for multi-venue trading.",
-      "Integrated live market feeds and enriched order flow analytics in close collaboration with quant researchers and traders, enabling adaptive execution logic."
     ]
   },
   {
